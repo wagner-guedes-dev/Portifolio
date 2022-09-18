@@ -1,0 +1,367 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Courier New', Courier, monospace;
+  }
+body {
+    height: 100vh;
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+    background-color: #1d1d1d;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+hr {
+    border: 0.1px solid rgb(91, 209, 215);
+}
+  /*MENU ********/
+#container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+  #logo{
+    margin-top: 10px;
+    cursor: pointer;
+}
+header{
+    border-top: 1px solid rgb(91, 209, 215);
+    border-bottom: 1px solid rgb(91, 209, 215);
+    height:65px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 20px;
+}
+#btn-mobile{
+    display: none;
+}
+#menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+}
+header nav{
+    height: 100%;
+    margin-top:10px;
+}
+header nav ul {
+    display: flex;
+}
+header nav ul li {
+    list-style: none;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: rgb(91, 209, 215);
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 24px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+header nav ul li:after{
+    display:block;
+    content: '';
+    border-bottom: solid 3px rgb(91, 209, 215);  
+    transform: scaleX(0);  
+    transition: transform 180ms ease-in-out;
+}
+header nav ul li:hover:after { 
+    transform: scaleX(1); 
+}
+.efeito-vidro {
+    box-shadow: 0 3px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 3px );
+    background: rgba(91, 209, 215, 0.064);
+    z-index: 1;
+}
+
+/* MAIN ****/
+main {
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    height: 100vh;
+}
+h1{
+    font-size: 60px;
+    margin-bottom: 10px;
+    color: rgb(91, 209, 215);
+    animation: glitch 1s linear infinite;
+}
+h1:before,
+h1:after{
+    content: attr(title);
+    position: absolute;
+    left: 0;
+}
+h1:before{
+    animation: glitchTop 1s infinite;
+    clip-path: polygon(0 0, 100% 33%, 0 33%);
+    -webkit-clip-path: polygon(0 0, 100% 33%, 0 33%)
+}
+h1::after{
+    animation: glitchBotom 1.5s linear infinite;
+    clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+h3{
+    font-size: 25px;
+    margin-bottom: 5px;
+    color: #5bd1d7;
+}
+p , 
+h2{
+    color: #5bd1d7;
+}
+/*  Inicio *****/
+
+
+main .info button {
+    display: block;
+    margin: 0 auto;
+    width: 280px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #5bd1d7;
+    border: 5px solid #000000;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    transition: border 0.5s;
+    transition: 0.5s;
+}
+main .info button a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height:100%;
+    margin-top: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #000000;
+    font-size: 25px;
+    letter-spacing: 2px;
+    transition: letter-spacing 0.5s;
+}
+main .info button:hover{
+    background-color: #0e76a8;
+    border: 5px solid #fff;
+}
+main .info button a:hover{
+    letter-spacing: 10px;
+    color:#fff;
+}
+.cartoon {
+    animation: go-back 1.5s infinite alternate;
+}
+
+/*SOBRE MIM ****/
+main .text {
+    width: 400px;
+}
+main .text p{
+    font-size: 18px;
+    color: #5bd1d7;
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: #000;
+}
+
+/*projetoos *****/
+#projetos{
+    display: block;
+}
+.titulo{
+    width: 300px;
+    height: 60px;
+    padding-top: 80px;
+    padding-bottom: 15px;
+    margin: 80px auto;
+}
+
+.caixas{
+    display:flex ;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+.caixa{
+    border: 2px solid #5bd1d7;
+    width: 250px;
+    height: 200px;
+    margin: 20px; 
+    border-radius: 20px;
+    cursor: pointer;
+    opacity: 0.4;
+    transition: opacity 0.2s;
+}
+.caixa:hover{
+    opacity: 1.0;
+    animation: shadow-pop-br 0.1s cubic-bezier(0.785, 0.135, 0.150, 0.860) both;
+}
+
+.caixa p{
+    border: 1px solid #5bd1d7;
+    background-color: #5bd1d7;
+    color: #000000;
+    text-align: center;
+    width: 98%;
+    margin: 85px auto;
+    border-radius: 20px;
+    height: 35px;
+    padding-top: 7px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    border: 2px solid #000;
+}
+.one{
+    background-image: url(../imagens-videos/projetos-fakes/1.png);
+}
+.two{
+    background-image: url(../imagens-videos/projetos-fakes/2.png);
+}
+.three{
+    background-image: url(../imagens-videos/projetos-fakes/3.png);
+}
+.four{
+    background-image: url(../imagens-videos/projetos-fakes/4.png);
+}
+.five{
+    background-image: url(../imagens-videos/projetos-fakes/5.png);
+}
+.six{
+    background-image: url(../imagens-videos/projetos-fakes/6.png);
+}
+.one,
+.two,
+.three,
+.four,
+.five,
+.six{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*Habilidades*******/
+#habilidades {
+    display:grid;
+    grid-template-columns: 3fr 3fr; /* 3fr = ocupa 3fraçoes referente ao total (4 = 3+1) / 1fr = ocupa uma fraçao referente ao total(4 = 3+1) */
+    grid-template-rows: 20vh 70vh 10vh;
+    /* grid-gap: 10px 25px (espaçamento entre os grids) (colums e depois rows)*/
+    grid-template-areas: "h h" 
+                         "hab1 a" 
+                         "hab1 a";
+}
+#header-habilidade{
+    grid-area: h;
+    padding-top: 150px;
+    margin: 0 auto;
+}
+.habilidades1-6 {
+    grid-area: hab1;
+    width: 100%;
+    height: 80%;
+}
+.habilidade{
+    border: 3px solid #5bd1d7;
+    background-color: rgb(85, 83, 83);
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 20px;
+    color: #fff;
+    border-radius: 20px;
+    opacity: 0.4;
+    transition: opacity 0.2s;
+    cursor: pointer;
+    
+}
+.habilidade p , 
+.habilidade h2 {
+    text-indent: -999999px;
+    display:none;
+}
+.hab1{
+    background-image: url(../Imagens-videos/logos-habilidades/html-logo-azul.png);
+}
+.hab2{
+    background-image: url(../Imagens-videos/logos-habilidades/css-logo-azul.png);
+}
+.hab3{
+    background-image: url(../Imagens-videos/logos-habilidades/js-logo-azul.png);
+}
+.hab4{
+    background-image: url(../Imagens-videos/logos-habilidades/react-logo-azul.png);
+    background-size: 80% !important; 
+}
+.hab5{
+    background-image: url(../Imagens-videos/logos-habilidades/git-logo-azul.png);
+    background-size: 80% !important; 
+}
+.hab6{
+    background-image: url(../Imagens-videos/logos-habilidades/github-logo-azul.png);
+    background-size: 80% !important; 
+}
+/*transaçao de habilidades ****/
+.hab1:hover{
+    background-image: url(../Imagens-videos/logos-habilidades/html-logo.png);
+    
+}
+.hab2:hover{
+    background-image: url(../Imagens-videos/logos-habilidades/css-logo.png);
+}
+.hab3:hover{
+    background-image: url(../Imagens-videos/logos-habilidades/js-logo.png);
+}
+.hab4:hover{
+    background-image: url(../Imagens-videos/logos-habilidades/react-logo.png);
+    background-size: 80% !important; 
+}
+.hab5:hover{
+    background-image: url(../Imagens-videos/logos-habilidades/git-logo.png);
+    background-size: 80% !important; 
+}
+.hab6:hover{
+    background-image: url(../Imagens-videos/logos-habilidades/github-logo.png);
+    background-size: 80% !important; 
+}
+.hab1,
+.hab2,
+.hab3,
+.hab4,
+.hab5,
+.hab6{
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+}
+.habilidade:hover{
+    opacity: 1.0;
+    animation: shadow-pop-br 0.1s cubic-bezier(0.785, 0.135, 0.150, 0.860) both;
+}
+#acao{
+    grid-area: a;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    padding-top: 185px;
+}
+/*rodape ****/
+footer{
+    color:#5bd1d7;
+    padding: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+
+

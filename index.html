@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="index">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens-videos/front-end-logo.png">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/responsividade.css">
+    <link rel="stylesheet" href="style/animacao.css">
+    <link rel="stylesheet" href="style/animacao-scroll.css">
+    <title>Portifolio | Wagner Guedes</title>
+</head>
+<body>
+    <header class="efeito-vidro">
+        <div id="menu">
+            <div id="logo">
+                <a href=""><img src="imagens-videos/front-end-logo.png" width="55px" height="45px" alt="logo"></a>
+            </div>
+            
+            <nav id="nav">
+                <button id="btn-mobile">Menu <span id="hamburguer"></span></button>
+                <ul>
+                    <li>
+                        <a onclick="selecionarMenu()" href="#inicio">Início</a>
+                    </li>
+                    <li>
+                        <a onclick="selecionarMenu()"  href="#SobreMim">Sobre mim</a>
+                    </li>
+                    <li>
+                        <a onclick="selecionarMenu()"  href="#projetos">Projetos</a>
+                    </li>
+                    <li>
+                        <a onclick="selecionarMenu()"  href="#habilidades">Habilidades</a>
+                    </li>
+                </ul>
+            </nav>
+
+
+        </div>
+
+
+    
+</header>
+
+    <div id="container" >
+     
+        <main id="inicio" >
+            <div class="info" data-anime="left">
+                <h3>Oi, eu sou</h3>
+                <h1 title="Wagner Guedes">Wagner Guedes.</h1>
+                <h3>Desenvolvedor Front-end</h3>
+                <button><a href="https://www.linkedin.com/in/wagner-guedes-0202w4725/">Linkedin</a></button>
+            </div>
+            <div class="cartoon" data-anime="right">
+                <img src="imagens-videos/cartoon.png" width="360px" height="360px" alt="Cartoon">
+            </div>
+        </main>
+        <hr>
+        <main id="SobreMim">
+            <div class="cartoon" data-anime="left">
+                <img src="imagens-videos/hacker.png" alt="Hacker" width="300px" height="300px"> 
+            </div>
+
+            <div class="text" data-anime="right">
+            <h1 title="Sobre Mim">Sobre Mim</h1>
+            <br>
+            <p>
+                Meu nome é Wagner Guedes e sou um apaixonado por tecnologia. Meu primeiro contato com a programação foi em 2020, quando entrei na faculdade no curso de engenharia elétrica e conclui a matéria Programação de Computadores I. Apesar de ter gostado da área, só comecei a dar o devido foco em 2021, quando um amigo me apresentou o desenvolvimento web.
+                <br>
+                Hoje já entendo tecnologias voltadas para o Front-end.
+            </p>
+           </div>
+        </main>
+        <hr>
+        <main id="projetos">
+            <div class="titulo" data-anime="down">
+                <h1 title="Projetos">Projetos</h1>
+            </div>
+            
+                <div class="caixas" data-anime="right">
+                    <div class="caixa , one">
+                        <p>Em Breve</p>
+                    </div>
+                    <div class="caixa , two">
+                        <p>Em Breve</p>
+                    </div>
+                    <div class="caixa , three">
+                        <p>Em Breve</p>
+                    </div>
+                </div>
+
+                <div class="caixas" data-anime="left">
+                    <div class="caixa , four">
+                        <p>Em Breve</p>
+                    </div>
+                    <div class="caixa , five">
+                        <p>Em Breve</p>
+                    </div>
+                    <div class="caixa , six">
+                        <p>Em Breve</p>
+                    </div>
+                    
+                </div>
+        </main>
+        <hr>
+        <main id="habilidades">
+            
+            <div id="header-habilidade" data-anime="down">
+                <h1 title="Habilidades">Habilidades</h1>
+            </div>
+            <div class="habilidades1-6" data-anime="left">
+                <div class="habilidade , hab1" onmouseover=html() onmouseleave=back()>
+                    <h2>HTML</h2>
+                    <br>
+                    <p> 
+                        É uma linguagem de marcação utilizada na construção de páginas Web.
+                        <br><br> 
+                        Tenho 6 meses de experiência com esta tecnologia.
+                    </p>
+                </div>
+                <div class="habilidade , hab2" onmouseover=css() onmouseleave=back()>
+                    <h2>CSS</h2> 
+                    <br> 
+                    <p> 
+                        É um mecanismo para adiconar estilo a um documento web. 
+                        <br><br> 
+                        Tenho 6 meses de experiência com esta tecnologia.
+                    </p>
+                </div>
+                <div class="habilidade , hab3" onmouseover=js() onmouseleave=back()>
+                    <h2>JAVASCRIPT</h2> 
+                    <br>
+                    <p> 
+                        É uma linguagem de programação.
+                        <br>
+                        Juntamente com HTML e CSS, é uma das três principais tecnologias web.
+                        <br><br> 
+                        Tenho 3 meses de experiência com esta tecnologia.
+                    </p>
+                </div>
+                <div class="habilidade , hab4" onmouseover=react() onmouseleave=back()>
+                    <h2>REACT</h2> 
+                    <br> 
+                    <p> 
+                        O React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web. 
+                        <br><br> 
+                        Tenho 1 mes de experiência com esta tecnologia.
+                    </p> 
+                </div>
+                <div class="habilidade , hab5" onmouseover=git() onmouseleave=back()>
+                    <h2>GIT</h2> 
+                    <br>  
+                    <p> 
+                        Git é um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software, mas pode ser usado para registrar o histórico de edições de qualquer tipo de arquivo.
+                    </p>
+                </div>
+                <div class="habilidade , hab6" onmouseover=github() onmouseleave=back()>
+                    <h2>GITHUB</h2>
+                     <br> 
+                     <p>
+                        GitHub é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git. Ele permite que programadores, utilitários ou qualquer usuário cadastrado na plataforma contribuam em projetos privados e/ou Open Source de qualquer lugar do mundo.
+                     </p>
+                </div>
+            </div>
+           
+            <div id="acao" data-anime="right">
+               <p>/*Passe o mouse sobre a habilidade*/</p>
+            </div>
+        </main>
+        <hr>
+        <footer>
+            <p><strong>E-mail para contato:</strong> wagnerguedes123@hotmail.com</p>
+            <p><strong>Feito por Wagner Guedes</strong></p>
+            <p>imagens: Pinterest</p>
+        </footer>
+    </div>
+    <script src="javascript/javascript.js"></script>
+    <script src="javascript/scroll.js"></script>
+    <script src="javascript/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+/*RESPONSIVIDADE****/
+@media (max-width:895px){
+    .habilidades1-6{
+        padding-left: 15%;
+    }
+}
+
+@media (max-width : 923px){
+    main .info button{
+        margin: 0;
+    }
+    h1{
+        animation: none;
+        text-align: center;
+    }
+    h3{
+     text-align: center;
+    }
+    h2{
+        text-align: center;
+    }
+    main .info button{
+        margin: 0 auto;
+    }
+    h1:before,
+    h1:after{
+        content: attr(none);
+        position:relative;
+    }
+    h1:before{
+        animation: none;
+    }
+    h1::after{
+        animation: none;
+    }
+    .cartoon{
+        padding-right: 20px;
+    }
+}
+
+@media (max-width : 840px){
+    #inicio{
+        padding-top: 70px;
+    }
+    p{
+        padding: 0 3%;
+    }
+    main{
+        display: block;
+        text-align: center;
+        margin: 120px auto;
+    }
+    main .cartoon img{
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    main .text {
+        margin: 0 auto;
+        display: inline;
+    }
+    main .info button{
+        margin: 0 auto;
+    }
+    .text h1 {
+        margin-top: 20px;
+    }
+    h1{
+        animation: none;
+    }h1:before,
+    h1:after{
+        content: attr(none);
+        position:relative;
+    }
+    h1:before{
+        animation: none;
+    }
+    h1::after{
+        animation: none;
+    }
+    #sobremin{
+        padding-top: 50px;
+    }
+}
+
+
+@media (max-width : 730px){
+    /*menu hambuguer*******/
+    header nav ul{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;/*ao colocar a animaçao de transilçao, nao poderia estar usando o "display:nome;" e sim o visibility, porem o menu ficava exposto, e atrapalhava a localizaçao do icone do hamburguer. A solucao foi colocar uma position absolute e 'mandar o menu pra longe' e manter apenas o icone do hamburgue*/
+    top: 10000px;
+    }
+    header nav.active ul{
+        display: block;
+        position: absolute;
+        top: 140px;
+        left: 16.5%;
+        width: 65vw;
+        height: 58vh;
+        text-align: center;
+        box-shadow: 0 3px 50px 0 rgba( 31, 38, 135, 0.37 );
+        background: rgba(0, 0, 0, 0.87);
+        border-radius: 30px;
+        z-index: 1000;
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.7s;
+        overflow-y: auto;
+    }
+    header nav.active ul li{    
+        margin: 55px;
+    }
+    header nav.active ul li a{
+        font-size: 20px;
+        letter-spacing: 4px;
+        font-family: sans-serif;
+    }
+    #btn-mobile{
+        display: flex;
+        padding:.5rem 1rem;
+        font-size: 1.2rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        color: #5bd1d7;
+        font-family: sans-serif;
+    }
+    #hamburguer {
+        display: block;
+        width: 20px;
+        border-top: 2px solid;
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+    #hamburguer::after,
+    #hamburguer::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: #5bd1d7;
+        margin-top: 5px;
+        transition: .5s;
+        position: relative;
+    }
+    header nav.active #hamburguer{
+        border-top: none ;
+    }
+    header nav.active #hamburguer::before{
+        transform: rotate(135deg);
+    }
+    header nav.active #hamburguer::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+    /*css mobile*/
+    .habilidades1-6{
+        padding-left: 5%;
+    }
+}
+@media (max-width:628px){
+    .habilidade{
+        width:80px;
+        height:80px;
+    }
+    
+}
+@media (max-width:543px){
+    .habilidade{
+        width:65px;
+        height:65px;
+    }
+    p{
+        font-size: 14px;
+    }
+}
