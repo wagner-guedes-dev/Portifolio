@@ -39,9 +39,6 @@
 }
 
 @media (max-width : 840px){
-    #inicio{
-        padding-top: 70px;
-    }
     p{
         padding: 0 3%;
     }
@@ -49,10 +46,7 @@
         display: block;
         text-align: center;
         margin: 120px auto;
-    }
-    main .cartoon img{
-        margin-top: 50px;
-        margin-bottom: 20px;
+        height: 75vh;
     }
     main .text {
         margin: 0 auto;
@@ -109,7 +103,7 @@
         overflow-y: auto;
     }
     header nav.active ul li{    
-        margin: 55px;
+        margin: 61px auto;
     }
     header nav.active ul li a{
         font-size: 20px;

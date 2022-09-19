@@ -171,8 +171,6 @@ main .text {
 main .text p{
     font-size: 18px;
     color: #5bd1d7;
-    -webkit-text-stroke-width: 0.2px;
-    -webkit-text-stroke-color: #000;
 }
 
 /*projetoos *****/
