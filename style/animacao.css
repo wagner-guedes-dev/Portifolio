@@ -62,6 +62,7 @@
     }
   }
 
+  /*animacao scroll*/
   @keyframes tracking-out-contract {
     0% {
       opacity: 1;
