@@ -147,16 +147,13 @@
     /*css mobile*/
    
 }
-@media (max-width:628px){
-    
-    
-}
+
 @media (max-width:522px){
     main{
         margin: 80px auto;
     }
     #projetos .caixas .caixa p{
-        font-size: 12px;
+        letter-spacing: 0px;
     }
     h1{
         font-size:50px;
