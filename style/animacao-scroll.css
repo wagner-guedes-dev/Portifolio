@@ -24,6 +24,5 @@
 }
 [data-anime-text].animatetext{
     opacity: 1;
-    transform: translate3d(0px, 0px, 0px);
     animation: tracking-out-contract 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.8s reverse both;
 }
