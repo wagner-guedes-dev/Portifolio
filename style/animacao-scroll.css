@@ -20,7 +20,7 @@
 /*Animacao scroll no texto*/
 [data-anime-text] {
     opacity: 0;
-    transition: 0.3s;
+    transition: 0.9s;
 }
 [data-anime-text].animatetext{
     opacity: 1;
