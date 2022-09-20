@@ -22,30 +22,26 @@
                 <button id="btn-mobile">Menu <span id="hamburguer"></span></button>
                 <ul>
                     <li>
-                        <a onclick="selecionarMenu()" href="#inicio">Início</a>
+                        <a onclick="selecionarMenu()" href="#inicioScroll">Início</a>
                     </li>
                     <li>
-                        <a onclick="selecionarMenu()"  href="#SobreMim">Sobre mim</a>
+                        <a onclick="selecionarMenu()"  href="#SobreMimScroll">Sobre mim</a>
                     </li>
                     <li>
-                        <a onclick="selecionarMenu()"  href="#projetos">Projetos</a>
+                        <a onclick="selecionarMenu()"  href="#projetosScroll">Projetos</a>
                     </li>
                     <li>
-                        <a onclick="selecionarMenu()"  href="#habilidades">Habilidades</a>
+                        <a onclick="selecionarMenu()"  href="#habilidadesScroll">Habilidades</a>
                     </li>
                 </ul>
             </nav>
-
-
         </div>
-
-
-    
 </header>
+    
+    <div id="container">
 
-    <div id="container" >
-     
-        <main id="inicio" >
+    <hr id="inicioScroll">
+        <main id="inicio">
             <div class="info" data-anime="left">
                 <h3>Oi, eu sou</h3>
                 <h1 title="Wagner Guedes">Wagner Guedes.</h1>
@@ -56,22 +52,24 @@
                 <img src="imagens-videos/cartoon.png" width="360px" height="360px" alt="Cartoon">
             </div>
         </main>
-        <hr>
+
+        <hr  id="SobreMimScroll">
         <main id="SobreMim">
             <div class="cartoon" data-anime="down">
                 <img src="imagens-videos/hacker.png" alt="Hacker" width="300px" height="300px"> 
             </div>
 
             <div class="text" data-anime="down">
-            <h1 title="Sobre Mim">Sobre Mim</h1>
-            <p>
-                Meu nome é Wagner Guedes e sou um apaixonado por tecnologia. Meu primeiro contato com a programação foi em 2020, quando entrei na faculdade no curso de engenharia elétrica e conclui a matéria Programação de Computadores I. Apesar de ter gostado da área, só comecei a dar o devido foco em 2021, quando um amigo me apresentou o desenvolvimento web.
-                <br>
-                Hoje já entendo tecnologias voltadas para o Front-end.
-            </p>
+                <h1 title="Sobre Mim">Sobre Mim</h1>
+                <p>
+                    Meu nome é Wagner Guedes e sou um apaixonado por tecnologia. Meu primeiro contato com a programação foi em 2020, quando entrei na faculdade no curso de engenharia elétrica e conclui a matéria Programação de Computadores I. Apesar de ter gostado da área, só comecei a dar o devido foco em 2021, quando um amigo me apresentou o desenvolvimento web.
+                    <br>
+                    Hoje já entendo tecnologias voltadas para o Front-end.
+                </p>
            </div>
         </main>
-        <hr>
+
+        <hr id="projetosScroll">
         <main id="projetos">
             <div class="titulo" data-anime="down">
                 <h1 title="Projetos">Projetos</h1>
@@ -88,7 +86,6 @@
                         <p>Em Breve</p>
                     </div>
                 </div>
-
                 <div class="caixas" data-anime="left">
                     <div class="caixa , four">
                         <p>Em Breve</p>
@@ -102,13 +99,15 @@
                     
                 </div>
         </main>
-        <hr>
+
+        <hr id="habilidadesScroll">
         <main id="habilidades">
-            
             <div id="header-habilidade" data-anime="down">
                 <h1 title="Habilidades">Habilidades</h1>
             </div>
-            <div class="habilidades1-6" data-anime="left">
+            <br>
+            
+            <div id="todasHabilidades" data-anime="left">
                 <div class="habilidade , hab1" onmouseover=html() onmouseleave=back()>
                     <h2>HTML</h2>
                     <br>
@@ -162,11 +161,12 @@
                      </p>
                 </div>
             </div>
-           
             <div id="acao" data-anime="right">
-               <p>/*Passe o mouse sobre a habilidade*/</p>
-            </div>
+                <p>/*Passe o mouse sobre a habilidade*/</p>
+             </div>
+            
         </main>
+
         <hr>
         <footer>
             <p><strong>E-mail para contato:</strong> wagnerguedes123@hotmail.com</p>

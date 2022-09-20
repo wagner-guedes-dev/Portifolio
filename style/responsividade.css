@@ -1,8 +1,6 @@
 /*RESPONSIVIDADE****/
 @media (max-width:895px){
-    .habilidades1-6{
-        padding-left: 15%;
-    }
+    
 }
 
 @media (max-width : 923px){
@@ -36,6 +34,9 @@
     .cartoon{
         padding-right: 20px;
     }
+    #acao{
+        width: 60%;
+    }
 }
 
 @media (max-width : 840px){
@@ -43,10 +44,10 @@
         padding: 0 3%;
     }
     main{
+        padding-top: 0px;
         display: block;
         text-align: center;
         margin: 120px auto;
-        height: 75vh;
     }
     main .text {
         margin: 0 auto;
@@ -58,22 +59,17 @@
     .text h1 {
         margin-top: 20px;
     }
-    h1{
-        animation: none;
-    }h1:before,
-    h1:after{
-        content: attr(none);
-        position:relative;
+    #projetos{
+        display: block;
+        padding-top: 0px !important;
     }
-    h1:before{
-        animation: none;
+    #habilidades{
+        margin: 0 auto !important;
     }
-    h1::after{
-        animation: none;
+    #acao{
+        width: 80%;
     }
-    #sobremin{
-        padding-top: 50px;
-    }
+
 }
 
 
@@ -103,7 +99,7 @@
         overflow-y: auto;
     }
     header nav.active ul li{    
-        margin: 61px auto;
+        margin: 52px auto;
     }
     header nav.active ul li a{
         font-size: 20px;
@@ -149,23 +145,23 @@
         top: -7px;
     }
     /*css mobile*/
-    .habilidades1-6{
-        padding-left: 5%;
-    }
+   
 }
 @media (max-width:628px){
-    .habilidade{
-        width:80px;
-        height:80px;
-    }
+    
     
 }
-@media (max-width:543px){
-    .habilidade{
-        width:65px;
-        height:65px;
+@media (max-width:522px){
+    main{
+        margin: 80px auto;
     }
-    p{
-        font-size: 14px;
+    #projetos .caixas .caixa p{
+        font-size: 12px;
+    }
+    h1{
+        font-size:50px;
+    }
+    #sobreMin .text p{
+        font-size: 15px;
     }
 }
