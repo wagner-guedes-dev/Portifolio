@@ -8,7 +8,7 @@ function back(){
 }
 function html(){
     const res =  document.getElementById("acao");
-    res.innerHTML = '<img src="../Imagens-videos/logos-habilidades/html-logo.png" alt="HTML" width="90px" height="90px"><br><br>  <h2>HTML</h2><p> É uma linguagem de marcação utilizada na construção de páginas Web.<br> Tenho 6 meses de experiência com esta tecnologia.</p> ';
+    res.innerHTML = '<img src="../Imagens-videos/logos-habilidades/html-logo.png" alt="HTML" width="90px" height="90px"><br><br>  <h2>HTML</h2><p> É uma linguagem de marcação utilizada na construção de páginas Web.<br> Tenho 6 meses de experiência com esta tecnologia.<br>/*Toque no ícone para desativar*/</p>';
     res.style.paddingTop = '0px'
     res.style.textAlign = 'center'
 }
