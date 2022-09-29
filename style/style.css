@@ -270,7 +270,7 @@ main .text {
     width: 100px;
     height: 100px;
     padding-top: 10px;
-    padding-left: 10px;
+    text-align: center;
     margin: 6px;
     color: #fff;
     border-radius: 20px;
@@ -291,12 +291,16 @@ main .text {
     display: flex;
     justify-content: center;
     flex-direction: row-reverse;
-    padding-top:25px ;
+    padding-top: 20px ;
     color: #fff;
     text-align: center;
     width: 100%;
     height: 100%;
     margin: 20px auto;
+}
+#text-hab{
+    padding-top: 100px;
+    padding-left: 30px;
 }
 .none{
     display: none;

@@ -1,8 +1,4 @@
 /*RESPONSIVIDADE****/
-@media (max-width:895px){
-    
-}
-
 @media (max-width : 923px){
     main .info button{
         margin: 0;
@@ -34,10 +30,9 @@
     .cartoon{
         padding-right: 20px;
     }
-    #acao{
-        width: 60%;
-    }
+ 
 }
+
 
 @media (max-width : 840px){
     p{
@@ -65,9 +60,6 @@
     }
     #habilidades{
         margin: 0 auto !important;
-    }
-    #acao{
-        width: 80%;
     }
 
 }
@@ -144,6 +136,10 @@
         transform: rotate(-135deg);
         top: -7px;
     }
+    .habilidade{
+        width: 80px;
+        height: 80px;
+    }
     /*css mobile*/
    
 }
@@ -161,5 +157,9 @@
     }
     #sobreMin .text p{
         font-size: 15px;
+    }
+    .habilidade{
+        width: 70px;
+        height: 70px;
     }
 }
