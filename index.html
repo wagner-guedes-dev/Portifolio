@@ -46,7 +46,12 @@
                 <h3>Oi, eu sou</h3>
                 <h1 title="Wagner Guedes">Wagner Guedes</h1>
                 <h3>Desenvolvedor Front-end</h3>
-                <button><a href="https://www.linkedin.com/in/wagner-guedes-0202w4725/">Linkedin</a></button>
+                <div id="button">
+                    <a href="https://www.linkedin.com/in/wagner-guedes-0202w4725/"><button id="linkedin">GitHub</button></a>
+                    <a href="https://github.com/wagnerwg0202"><button id="githubrepositorio">GitHub</button></a>
+                    <a href="https://instagram.com/wagner_guedes02?igshid=YmMyMTA2M2Y="><button id="instagram">instagram</button></a>
+                </div>
+                
             </div>
             <div class="cartoon" data-anime="down">
                 <img src="imagens-videos/cartoon.png" width="360px" height="360px" alt="Cartoon">
@@ -96,7 +101,9 @@
                     <div class="caixa , six">
                         <p>Em Breve</p>
                     </div>
-                    
+                </div>
+                <div data-anime-text>
+                    <p>/*Repósitorios no GitHub*/</p>
                 </div>
         </main>
 
@@ -108,16 +115,41 @@
             <br>
             
             <div id="todasHabilidades" data-anime="left">
-                <div class="habilidade , hab1" onmouseover=html() onmouseleave=back()>
+                <div class="habilidade" onclick=html() id="block-html">
+                    <img src="imagens-videos/logos-habilidades/html-logo-azul.png" width="90%" height="90%" alt="">
+                </div>
+                <div class="habilidade" onclick=css() id="block-css">
+                    <img src="imagens-videos/logos-habilidades/css-logo-azul.png" width="90%" height="90%" alt="">
+                </div>
+                <div class="habilidade" onclick=js() id="block-js">
+                    <img src="imagens-videos/logos-habilidades/js-logo-azul.png" width="90%" height="90%" alt="">
+                </div>
+                <div class="habilidade" onclick=react() id="block-react">
+                    <img src="imagens-videos/logos-habilidades/react-logo.png" width="90%" height="90%" alt="">
+                </div>
+                <div class="habilidade" onclick=git() id="block-git">
+                    <img src="imagens-videos/logos-habilidades/git-logo-azul.png" width="90%" height="90%" alt="">
+                </div>
+                <div class="habilidade" onclick=github() id="block-github">
+                    <img src="imagens-videos/logos-habilidades/github-logo-azul.png" width="90%" height="90%" alt="">
+                </div>
+            </div>
+            <div id="acao" data-anime-text>
+                <div id="text-hab">
+                    <p>/*click sobre a habilidade*/</p>
+                </div>
+                <div id="html-hab">
+                    <img src="imagens-videos/logos-habilidades/html-logo.png" width="90px" height="90px">
                     <h2>HTML</h2>
                     <br>
-                    <p> 
+                    <p>
                         É uma linguagem de marcação utilizada na construção de páginas Web.
                         <br><br> 
                         Tenho 6 meses de experiência com esta tecnologia.
                     </p>
                 </div>
-                <div class="habilidade , hab2" onmouseover=css() onmouseleave=back()>
+                <div id="css">
+                    <img src="imagens-videos/logos-habilidades/css-logo.png" width="90px" height="90px" alt="">
                     <h2>CSS</h2> 
                     <br> 
                     <p> 
@@ -126,7 +158,8 @@
                         Tenho 6 meses de experiência com esta tecnologia.
                     </p>
                 </div>
-                <div class="habilidade , hab3" onmouseover=js() onmouseleave=back()>
+                <div id="js">
+                    <img src="imagens-videos/logos-habilidades/js-logo.png" width="90px" height="90px" alt="">
                     <h2>JAVASCRIPT</h2> 
                     <br>
                     <p> 
@@ -137,38 +170,38 @@
                         Tenho 3 meses de experiência com esta tecnologia.
                     </p>
                 </div>
-                <div class="habilidade , hab4" onmouseover=react() onmouseleave=back()>
-                    <h2>REACT</h2> 
+                <div id="react">
+                    <img src="imagens-videos/logos-habilidades/react-logo.png" width="100px" height="100px" alt="">
+                    <h2>REACT JS</h2> 
                     <br> 
                     <p> 
-                        O React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web. 
+                        O React JS é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web. 
                         <br><br> 
                         Tenho 1 mes de experiência com esta tecnologia.
-                    </p> 
+                    </p>
                 </div>
-                <div class="habilidade , hab5" onmouseover=git() onmouseleave=back()>
+                <div id="git">
+                    <img src="imagens-videos/logos-habilidades/git-logo.png" width="100px" height="100px" alt="">
                     <h2>GIT</h2> 
                     <br>  
                     <p> 
                         Git é um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software, mas pode ser usado para registrar o histórico de edições de qualquer tipo de arquivo.
                     </p>
                 </div>
-                <div class="habilidade , hab6" onmouseover=github() onmouseleave=back()>
+                <div id="github">
+                    <img src="imagens-videos/logos-habilidades/github-logo-tracado.png" width="100px" height="100px" alt="">
                     <h2>GITHUB</h2>
                      <br> 
                      <p>
                         GitHub é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git. Ele permite que programadores, utilitários ou qualquer usuário cadastrado na plataforma contribuam em projetos privados e/ou Open Source de qualquer lugar do mundo.
                      </p>
                 </div>
-            </div>
-            <div id="acao" data-anime-text>
-                <p>/*Passe o mouse sobre a habilidade*/</p>
              </div>
             
         </main>
 
         <hr>
-        <footer data-anime="left">
+        <footer>
             <p><strong>E-mail para contato:</strong> wagnerguedes123@hotmail.com</p>
             <p><strong>Feito por Wagner Guedes</strong></p>
             <p>imagens: Pinterest</p>

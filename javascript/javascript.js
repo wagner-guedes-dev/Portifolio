@@ -1,46 +1,154 @@
 
-//imagens das habilidades sendo habilitadas ao passar o mouse
+//imagens das habilidades sendo habilitadas
+var htmlHab = document.getElementById('html-hab')
+var cssHab = document.getElementById('css')
+var jsHab = document.getElementById('js')
+var reactHab = document.getElementById('react')
+var gitHab = document.getElementById('git')
+var githubHab = document.getElementById('github')
 
-function back(){
-    const res =  document.getElementById("acao");
-    res.innerHTML =  "<p>/*Passe o mouse sobre a habilidade*/</p>";
-    res.style.paddingTop = '100px'
-}
+
+htmlHab.classList.toggle('none')
+cssHab.classList.toggle('none')
+jsHab.classList.toggle('none')
+reactHab.classList.toggle('none')
+gitHab.classList.toggle('none')
+githubHab.classList.toggle('none')
+
+var blockHtml = document.getElementById('block-html')
+var blockCss = document.getElementById('block-css')
+var blockJs = document.getElementById('block-js')
+var blockReact = document.getElementById('block-react')
+var blockGit = document.getElementById('block-git')
+var blockGithub = document.getElementById('block-github')
+
 function html(){
-    const res =  document.getElementById("acao");
-    res.innerHTML = '<img src="../Imagens-videos/logos-habilidades/html-logo.png" alt="HTML" width="90px" height="90px"><br><br>  <h2>HTML</h2><p> É uma linguagem de marcação utilizada na construção de páginas Web.<br> Tenho 6 meses de experiência com esta tecnologia.<br>/*Toque no ícone para desativar*/</p>';
-    res.style.paddingTop = '0px'
-    res.style.textAlign = 'center'
+    //display none e display block nas habilidades *** animacao na habilidade selecionada
+    htmlHab.classList.toggle('none') //html sendo animado
+    htmlHab.classList.add('animation')
+
+    cssHab.classList.add('none')
+    jsHab.classList.add('none')
+    reactHab.classList.add('none')
+    gitHab.classList.add('none')
+    githubHab.classList.add('none')
+
+    //animacao no bloco com a logo
+    blockHtml.classList.toggle('habilidade-block-animate')//bloco html sendo animado
+    blockCss.classList.remove('habilidade-block-animate')
+
+    blockJs.classList.remove('habilidade-block-animate')
+    blockReact.classList.remove('habilidade-block-animate')
+    blockGit.classList.remove('habilidade-block-animate')
+    blockGithub.classList.remove('habilidade-block-animate')
 }
 function css(){
-    const res =  document.getElementById("acao");
-    res.innerHTML = '<img src="../Imagens-videos/logos-habilidades/css-logo.png" alt="CSS" width="90px" height="90px"><br><br>  <h2>CSS</h2><p> É um mecanismo para adiconar estilo a um documento web.<br> Tenho 6 meses de experiência com esta tecnologia.</p>';
-    res.style.paddingTop = '0px'
-    res.style.textAlign = 'center'
+    //display none e display block nas habilidades *** animacao na habilidade selecionada
+    htmlHab.classList.add('none')
+
+    cssHab.classList.toggle('none')//css sendo animado
+    cssHab.classList.add('animation')
+
+    jsHab.classList.add('none')
+    reactHab.classList.add('none')
+    gitHab.classList.add('none')
+    githubHab.classList.add('none')
+
+    //animacao no bloco com a logo
+    blockHtml.classList.remove('habilidade-block-animate')
+    
+    blockCss.classList.toggle('habilidade-block-animate')//bloco css sendo animado
+
+    blockJs.classList.remove('habilidade-block-animate')
+    blockReact.classList.remove('habilidade-block-animate')
+    blockGit.classList.remove('habilidade-block-animate')
+    blockGithub.classList.remove('habilidade-block-animate')
 }
 function js(){
-    const res =  document.getElementById("acao");
-    res.innerHTML = '<img src="../Imagens-videos/logos-habilidades/js-logo.png" alt="JAVASCRIPT"width="90px" height="90px"><br><br>  <h2>JAVASCRIPT</h2> <p> É uma linguagem de programação.<br>Juntamente com HTML e CSS, é uma das três principais tecnologias web. <br> Tenho 3 meses de experiência com esta tecnologia.</p> ';
-    res.style.paddingTop = '0px'
-    res.style.textAlign = 'center'
+    //display none e display block nas habilidades *** animacao na habilidade selecionada
+    htmlHab.classList.add('none')
+    cssHab.classList.add('none')
+
+    jsHab.classList.toggle('none')//js sendo animado
+    jsHab.classList.add('animation')
+
+    reactHab.classList.add('none')
+    gitHab.classList.add('none')
+    githubHab.classList.add('none')
+
+    //animacao no bloco com a logo
+    blockHtml.classList.remove('habilidade-block-animate')
+    blockCss.classList.remove('habilidade-block-animate')
+
+    blockJs.classList.toggle('habilidade-block-animate')//bloco js sendo animado
+
+    blockReact.classList.remove('habilidade-block-animate')
+    blockGit.classList.remove('habilidade-block-animate')
+    blockGithub.classList.remove('habilidade-block-animate')
 }
 function react(){
-    const res =  document.getElementById("acao");
-    res.innerHTML = '<img src="../Imagens-videos/logos-habilidades/react-logo.png" alt="REACT" width="100px" height="100px"><br><br>  <h2>REACT</h2> <p> O React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web. <br> Tenho 1 mes de experiência com esta tecnologia.</p> ';
-    res.style.paddingTop = '0px'
-    res.style.textAlign = 'center'
+    //display none e display block nas habilidades *** animacao na habilidade selecionada
+    htmlHab.classList.add('none')
+    cssHab.classList.add('none')
+    jsHab.classList.add('none')
+
+    reactHab.classList.toggle('none')//react sendo animado
+    reactHab.classList.add('animation')
+
+    gitHab.classList.add('none')
+    githubHab.classList.add('none')
+
+    //animacao no bloco com a logo
+    blockHtml.classList.remove('habilidade-block-animate')
+    blockCss.classList.remove('habilidade-block-animate')
+    blockJs.classList.remove('habilidade-block-animate')
+
+    blockReact.classList.toggle('habilidade-block-animate')//bloco react sendo animado
+
+    blockGit.classList.remove('habilidade-block-animate')
+    blockGithub.classList.remove('habilidade-block-animate')
 }
 function git(){
-    const res =  document.getElementById("acao");
-    res.innerHTML = '<img src="../Imagens-videos/logos-habilidades/git-logo.png" alt="GIT" width="100px" height="100px"><br><br>  <h2>GIT</h2> <p> Git é um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software, mas pode ser usado para registrar o histórico de edições de qualquer tipo de arquivo.</p> ';
-    res.style.paddingTop = '0px'
-    res.style.textAlign = 'center'
+    //display none e display block nas habilidades *** animacao na habilidade selecionada
+    htmlHab.classList.add('none')
+    cssHab.classList.add('none')
+    jsHab.classList.add('none')
+    reactHab.classList.add('none')
+
+    gitHab.classList.toggle('none')//git sendo animado
+    gitHab.classList.add('animation')
+
+    githubHab.classList.add('none')
+
+    //animacao no bloco com a logo
+    blockHtml.classList.remove('habilidade-block-animate')
+    blockCss.classList.remove('habilidade-block-animate')
+    blockJs.classList.remove('habilidade-block-animate')
+    blockReact.classList.remove('habilidade-block-animate')
+
+    blockGit.classList.toggle('habilidade-block-animate')//bloco git sendo animado
+
+    blockGithub.classList.remove('habilidade-block-animate')
 }
 function github(){
-    const res =  document.getElementById("acao");
-    res.innerHTML = '<img src="../Imagens-videos/logos-habilidades/github-logo-tracado.png" alt="GITHUB" width="100px" height="100px"><br><br> <h2>GITHUB</h2> <p>GitHub é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git. Ele permite que programadores, utilitários ou qualquer usuário cadastrado na plataforma contribuam em projetos privados e/ou Open Source de qualquer lugar do mundo.</p> ';
-    res.style.paddingTop = '0px'
-    res.style.textAlign = 'center'
+    //display none e display block nas habilidades *** animacao na habilidade selecionada
+    htmlHab.classList.add('none')
+    cssHab.classList.add('none')
+    jsHab.classList.add('none')
+    reactHab.classList.add('none')
+    gitHab.classList.add('none')
+
+    githubHab.classList.toggle('none')//github sendo animado
+    githubHab.classList.add('animation')
+
+    //animacao no bloco com a logo
+    blockHtml.classList.remove('habilidade-block-animate')
+    blockCss.classList.remove('habilidade-block-animate')
+    blockJs.classList.remove('habilidade-block-animate')
+    blockReact.classList.remove('habilidade-block-animate')
+    blockGit.classList.remove('habilidade-block-animate')
+
+    blockGithub.classList.toggle('habilidade-block-animate')//bloco github sendo animado
 }
 
 

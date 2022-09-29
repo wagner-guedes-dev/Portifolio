@@ -126,40 +126,37 @@ h2{
 
 /*  Inicio *****/
 
-
-main .info button {
-    display: block;
-    margin: 0 auto;
-    width: 280px;
-    height: 50px;
-    border-radius: 50px;
+main .info #button{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+main .info #button button {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    margin: 0 10px;
     background-color: #5bd1d7;
-    border: 5px solid #000000;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     cursor: pointer;
-    transition: background-color 0.5s;
-    transition: border 0.5s;
-    transition: 0.5s;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-size: 80px;
+    background-position: center;
+    transition: 0.1s;
 }
-main .info button a {
-    text-decoration: none;
-    display: block;
-    width: 100%;
-    height:100%;
-    margin-top: 5px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: #000000;
-    font-size: 25px;
-    letter-spacing: 2px;
-    transition: letter-spacing 0.5s;
+main .info #button #linkedin{
+    background-image: url(../Imagens-videos/linkedin.png);
 }
-main .info button:hover{
-    background-color: #0e76a8;
-    border: 5px solid #fff;
+main .info #button #githubrepositorio{
+    background-image: url(../Imagens-videos/logos-habilidades/github-logo.png);
 }
-main .info button a:hover{
-    letter-spacing: 10px;
-    color:#fff;
+main .info #button #instagram{
+    background-image: url(../Imagens-videos/instagram.png);
+}
+main .info #button button:hover{
+    background-color: #fff;
+    animation: shadow-pop-br-white 0.1s cubic-bezier(0.785, 0.135, 0.150, 0.860) both;
+    border: 0;
 }
 .cartoon {
     animation: go-back 1.5s infinite alternate;
@@ -272,6 +269,8 @@ main .text {
     background-color: rgb(85, 83, 83);
     width: 100px;
     height: 100px;
+    padding-top: 10px;
+    padding-left: 10px;
     margin: 6px;
     color: #fff;
     border-radius: 20px;
@@ -280,79 +279,51 @@ main .text {
     cursor: pointer;
 }
 
-.habilidade p , 
-.habilidade h2 {
-    text-indent: -999999px;
-    display:none;
-}
-.hab1{
-    background-image: url(../Imagens-videos/logos-habilidades/html-logo-azul.png);
-}
-.hab2{
-    background-image: url(../Imagens-videos/logos-habilidades/css-logo-azul.png);
-}
-.hab3{
-    background-image: url(../Imagens-videos/logos-habilidades/js-logo-azul.png);
-}
-.hab4{
-    background-image: url(../Imagens-videos/logos-habilidades/react-logo-azul.png);
-}
-.hab5{
-    background-image: url(../Imagens-videos/logos-habilidades/git-logo-azul.png);
-}
-.hab6{
-    background-image: url(../Imagens-videos/logos-habilidades/github-logo-azul.png);
-}
+
 /*transaçao de habilidades ****/
-.hab1:hover{
-    background-image: url(../Imagens-videos/logos-habilidades/html-logo.png);
-}
-.hab2:hover{
-    background-image: url(../Imagens-videos/logos-habilidades/css-logo.png);
-}
-.hab3:hover{
-    background-image: url(../Imagens-videos/logos-habilidades/js-logo.png);
-}
-.hab4:hover{
-    background-image: url(../Imagens-videos/logos-habilidades/react-logo.png);
-    
-}
-.hab5:hover{
-    background-image: url(../Imagens-videos/logos-habilidades/git-logo.png);
-    
-}
-.hab6:hover{
-    background-image: url(../Imagens-videos/logos-habilidades/github-logo.png);
-    
-}
-.hab1,
-.hab2,
-.hab3,
-.hab4,
-.hab5,
-.hab6{
-    background-repeat: no-repeat;
-    background-size: 90%;
-    background-position: center;
-}
-.habilidade:hover{
+
+
+.habilidade-block-animate{
     opacity: 1.0;
     animation: shadow-pop-br 0.1s cubic-bezier(0.785, 0.135, 0.150, 0.860) both;
 }
 #acao{
-    padding-top:100px ;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    padding-top:25px ;
     color: #fff;
     text-align: center;
-    width: 50%;
+    width: 100%;
     height: 100%;
     margin: 20px auto;
 }
+.none{
+    display: none;
+    opacity: 0;
+}
+
+.animation {
+    animation: tracking-out-contract 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.2s reverse both;
+} 
+
+
+#html-hab , 
+#css ,
+#js ,
+#react ,
+#git ,
+#github {
+    width: 50%;
+}
+
 /*rodape ****/
 footer{
     color:#5bd1d7;
     padding: 20px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
 
 
 
