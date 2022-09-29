@@ -14,7 +14,7 @@
 <body>
     <header class="efeito-vidro">
         <div id="menu">
-            <div id="logo">
+            <div title="Wagner Guedes Portifólio" id="logo">
                 <a href=""><img src="imagens-videos/front-end-logo.png" width="55px" height="45px" alt="logo"></a>
             </div>
             
@@ -47,9 +47,9 @@
                 <h1 title="Wagner Guedes">Wagner Guedes</h1>
                 <h3>Desenvolvedor Front-end</h3>
                 <div id="button">
-                    <a href="https://www.linkedin.com/in/wagner-guedes-0202w4725/"><button id="linkedin">GitHub</button></a>
-                    <a href="https://github.com/wagnerwg0202"><button id="githubrepositorio">GitHub</button></a>
-                    <a href="https://instagram.com/wagner_guedes02?igshid=YmMyMTA2M2Y="><button id="instagram">instagram</button></a>
+                    <a title="Linkedin" href="https://www.linkedin.com/in/wagner-guedes-0202w4725/"><button id="linkedin">Linkedin</button></a>
+                    <a title="GitHub" href="https://github.com/wagnerwg0202"><button id="githubrepositorio">GitHub</button></a>
+                    <a title="Instagram" href="https://instagram.com/wagner_guedes02?igshid=YmMyMTA2M2Y="><button id="instagram">instagram</button></a>
                 </div>
                 
             </div>
@@ -61,7 +61,7 @@
         <hr  id="SobreMimScroll">
         <main id="SobreMim">
             <div class="cartoon" data-anime="down">
-                <img src="imagens-videos/hacker.png" alt="Hacker" width="300px" height="300px"> 
+                <img src="imagens-videos/hacker.png" alt="Hacker-carton" width="300px" height="300px"> 
             </div>
 
             <div class="text" >
@@ -80,28 +80,27 @@
                 <h1 title="Projetos">Projetos</h1>
             </div>
             
-                <div class="caixas" data-anime="right">
-                    <div class="caixa , one">
-                        <p>Em Breve</p>
+                <div id="todos-os-projetos" data-anime="left">
+                    <div class="projeto">
+                        <a href="https://gestaopizzaria.netlify.app/"><img src="" alt=""></a>
                     </div>
-                    <div class="caixa , two">
-                        <p>Em Breve</p>
+                    <div class="projeto">
+                        <p>breve</p>
                     </div>
-                    <div class="caixa , three">
-                        <p>Em Breve</p>
+                    <div class="projeto">
+                        <p>breve</p>
                     </div>
-                </div>
-                <div class="caixas" data-anime="left">
-                    <div class="caixa , four">
-                        <p>Em Breve</p>
+                    <div class="projeto">
+                        <p>breve</p>
                     </div>
-                    <div class="caixa , five">
-                        <p>Em Breve</p>
+                    <div class="projeto">
+                        <p>breve</p>
                     </div>
-                    <div class="caixa , six">
-                        <p>Em Breve</p>
+                    <div class="projeto">
+                        <p>breve</p>
                     </div>
                 </div>
+                
                 <div data-anime-text>
                     <p>/*Repósitorios no GitHub*/</p>
                 </div>
@@ -116,31 +115,32 @@
             
             <div id="todasHabilidades" data-anime="left">
                 <div class="habilidade" onclick=html() id="block-html">
-                    <img src="imagens-videos/logos-habilidades/html-logo-azul.png" width="90%" height="90%" alt="">
+                    <img src="imagens-videos/logos-habilidades/html-logo-azul.png" width="90%" height="90%" alt="logo Html">
                 </div>
                 <div class="habilidade" onclick=css() id="block-css">
-                    <img src="imagens-videos/logos-habilidades/css-logo-azul.png" width="90%" height="90%" alt="">
+                    <img src="imagens-videos/logos-habilidades/css-logo-azul.png" width="90%" height="90%" alt="logo Css">
                 </div>
                 <div class="habilidade" onclick=js() id="block-js">
-                    <img src="imagens-videos/logos-habilidades/js-logo-azul.png" width="90%" height="90%" alt="">
+                    <img src="imagens-videos/logos-habilidades/js-logo-azul.png" width="90%" height="90%" alt="logo js">
                 </div>
                 <div class="habilidade" onclick=react() id="block-react">
-                    <img src="imagens-videos/logos-habilidades/react-logo.png" width="90%" height="90%" alt="">
+                    <img src="imagens-videos/logos-habilidades/react-logo.png" width="90%" height="90%" alt="logo react">
                 </div>
                 <div class="habilidade" onclick=git() id="block-git">
-                    <img src="imagens-videos/logos-habilidades/git-logo-azul.png" width="90%" height="90%" alt="">
+                    <img src="imagens-videos/logos-habilidades/git-logo-azul.png" width="90%" height="90%" alt="logo git">
                 </div>
                 <div class="habilidade" onclick=github() id="block-github">
-                    <img src="imagens-videos/logos-habilidades/github-logo-azul.png" width="90%" height="90%" alt="">
+                    <img src="imagens-videos/logos-habilidades/github-logo-azul.png" width="90%" height="90%" alt="logo gitHub">
                 </div>
             </div>
             <div id="acao" data-anime-text>
                 <div id="text-hab">
-                    <p>/*click sobre a habilidade*/</p>
+                    <p id="desktoptext">/*click sobre a habilidade*/</p>
+                    <p id="mobiletext">/*Toque sobre a habilidade*/</p><!--Troca de mensagem para dispositivos touchscreen-->
                 </div>
                 <div id="descricao-hab">
                     <div id="html-hab">
-                        <img src="imagens-videos/logos-habilidades/html-logo.png" width="90px" height="90px">
+                        <img src="imagens-videos/logos-habilidades/html-logo.png" width="90px" height="90px" alt="image html">
                         <h2>HTML</h2>
                         <br>
                         <p>
@@ -150,7 +150,7 @@
                         </p>
                     </div>
                     <div id="css">
-                        <img src="imagens-videos/logos-habilidades/css-logo.png" width="90px" height="90px" alt="">
+                        <img src="imagens-videos/logos-habilidades/css-logo.png" width="90px" height="90px" alt="image css">
                         <h2>CSS</h2> 
                         <br> 
                         <p> 
@@ -160,7 +160,7 @@
                         </p>
                     </div>
                     <div id="js">
-                        <img src="imagens-videos/logos-habilidades/js-logo.png" width="90px" height="90px" alt="">
+                        <img src="imagens-videos/logos-habilidades/js-logo.png" width="90px" height="90px" alt=" image js">
                         <h2>JAVASCRIPT</h2> 
                         <br>
                         <p> 
@@ -172,7 +172,7 @@
                         </p>
                     </div>
                     <div id="react">
-                        <img src="imagens-videos/logos-habilidades/react-logo.png" width="90px" height="90px" alt="">
+                        <img src="imagens-videos/logos-habilidades/react-logo.png" width="90px" height="90px" alt="image react">
                         <h2>REACT JS</h2> 
                         <br> 
                         <p> 
@@ -182,7 +182,7 @@
                         </p>
                     </div>
                     <div id="git">
-                        <img src="imagens-videos/logos-habilidades/git-logo.png" width="90px" height="90px" alt="">
+                        <img src="imagens-videos/logos-habilidades/git-logo.png" width="90px" height="90px" alt="image git">
                         <h2>GIT</h2> 
                         <br>  
                         <p> 
@@ -190,7 +190,7 @@
                         </p>
                     </div>
                     <div id="github">
-                        <img src="imagens-videos/logos-habilidades/github-logo-tracado.png" width="90px" height="90px" alt="">
+                        <img src="imagens-videos/logos-habilidades/github-logo-tracado.png" width="90px" height="90px" alt="image github">
                         <h2>GITHUB</h2>
                         <br> 
                         <p>

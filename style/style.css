@@ -13,7 +13,6 @@ body {
 }
 html{
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 hr {
@@ -185,21 +184,19 @@ main .text {
     margin: 20px auto;
 }
 
-.caixas{
-    display:flex ;
-    align-items: center;
-    justify-content: space-evenly;
-    position: relative;
+#todos-os-projetos{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    gap: 15px;
 }
-.caixa{
-    border: 2px solid #5bd1d7;
-    width: 240px;
-    height: 180px;
-    margin: 20px; 
+.projeto{
     border-radius: 20px;
-    cursor: pointer;
-    opacity: 0.4;
-    transition: opacity 0.2s;
+    border: 3px solid #5bd1d7;
+    background-color: rgb(118, 118, 118);
+    display: block;
+    width: 200px;
+    height:150px;
 }
 .caixa:hover{
     opacity: 1.0;
@@ -207,19 +204,7 @@ main .text {
 }
 
 .caixa p{
-    border: 1px solid #5bd1d7;
-    background-color: #5bd1d7;
-    color: #000000;
-    text-align: center;
-    width: 98%;
-    margin: 85px auto;
-    border-radius: 20px;
-    height: 35px;
-    padding-top: 7px;
-    font-weight: bold;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    border: 2px solid #000;
+    
 }
 .one{
     background-image: url(../imagens-videos/projetos-fakes/1.png);
@@ -261,7 +246,6 @@ main .text {
 }
 #todasHabilidades{
     justify-content: space-evenly;
-    height: 120px;
     display: flex;
     padding: 5px;
 }
@@ -297,7 +281,6 @@ main .text {
     padding: 5px;
 }
 #descricao-hab{
-    width: 80%;
     text-align: center;
 }
 #text-hab{
@@ -331,7 +314,12 @@ footer{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-
+#mobiletext{
+    display: none;
+}
+#desktotext {
+    display: block;
+}
 
 
 

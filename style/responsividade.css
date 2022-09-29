@@ -13,9 +13,7 @@
     h2{
         text-align: center;
     }
-    main .info button{
-        margin: 0 auto;
-    }
+    
     h1:before,
     h1:after{
         content: attr(none);
@@ -34,6 +32,13 @@
 
 
 @media (max-width : 840px){
+    main .info #button{
+        height: 110px;
+    }
+    main .info #button button {
+        width: 80px;
+        height: 80px;
+    }
     p{
         padding: 0 3%;
     }
@@ -47,7 +52,8 @@
         margin: 0 auto;
         display: inline;
     }
-    main .info button{
+    main .text p{
+        width: 80%;
         margin: 0 auto;
     }
     .text h1 {
@@ -62,7 +68,14 @@
     }
 
 }
-
+@media (max-width : 768px){
+    #mobiletext{
+        display: block;
+    }
+    #desktoptext {
+        display: none;
+    }
+}
 
 @media (max-width : 730px){
     /*menu hambuguer*******/
@@ -143,9 +156,8 @@
    
 }
 @media (max-width:662px){
-    #descricao-hab{
-        width: 100%;
-    }
+
+    
     #html-hab , 
     #css ,
     #js ,
@@ -153,6 +165,9 @@
     #git ,
     #github {
     width: 100%;
+}
+main .text p{
+    width: 95%;
 }
 }
 @media (max-width:522px){

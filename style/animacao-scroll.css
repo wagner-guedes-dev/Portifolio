@@ -1,7 +1,7 @@
 /* animaçao scroll nas imagens*/
 [data-anime] {
     opacity: 0;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 [data-anime="left"]{
     transform: translate3d(-100px, 0, 0);
@@ -24,7 +24,7 @@
 }
 [data-anime-text].animatetext{
     opacity: 1;
-    animation: tracking-out-contract 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.6s reverse both;
+    animation: tracking-out-contract 0.6s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.6s reverse both;
 }
 @keyframes tracking-out-contract {
     0% {
