@@ -137,6 +137,7 @@ main .info #button button {
     border-radius: 20px;
     margin: 0 10px;
     background-color: #5bd1d7;
+    border: 0;
     cursor: pointer;
     text-indent: -9999px;
     background-repeat: no-repeat;
@@ -291,16 +292,17 @@ main .text {
     display: flex;
     justify-content: center;
     flex-direction: row-reverse;
-    padding-top: 20px ;
     color: #fff;
-    text-align: center;
     width: 100%;
-    height: 100%;
-    margin: 20px auto;
+    padding: 5px;
+}
+#descricao-hab{
+    width: 80%;
+    text-align: center;
 }
 #text-hab{
-    padding-top: 100px;
-    padding-left: 30px;
+    padding-top: 90px;
+    text-align: center;
 }
 .none{
     display: none;
@@ -318,7 +320,8 @@ main .text {
 #react ,
 #git ,
 #github {
-    width: 50%;
+    width: 80%;
+    margin: 0 auto;
 }
 
 /*rodape ****/

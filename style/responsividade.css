@@ -30,7 +30,6 @@
     .cartoon{
         padding-right: 20px;
     }
- 
 }
 
 
@@ -143,7 +142,19 @@
     /*css mobile*/
    
 }
-
+@media (max-width:662px){
+    #descricao-hab{
+        width: 100%;
+    }
+    #html-hab , 
+    #css ,
+    #js ,
+    #react ,
+    #git ,
+    #github {
+    width: 100%;
+}
+}
 @media (max-width:522px){
     main{
         margin: 80px auto;
