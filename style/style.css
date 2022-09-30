@@ -13,6 +13,7 @@ body {
 }
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 hr {
@@ -173,17 +174,16 @@ main .text {
 /*projetoos *****/
 #projetos{
     display: block;
-    padding-top: 10vh !important;
+    padding-top: 13vh !important;
 }
-.titulo{
-    display: flex;
-    justify-content: center;
-    width: 300px;
-    height: 60px;
-    padding-bottom: 15px;
-    margin: 20px auto;
+#titulo-projetos{
+    width: 295px;
+    margin: 0 auto;
 }
-
+#repositoriotxt{
+    text-align: right;
+    margin-bottom: 20px;
+}
 #todos-os-projetos{
     display: flex;
     justify-content:center;
@@ -191,48 +191,30 @@ main .text {
     gap: 15px;
 }
 .projeto{
+    background-color: rgb(0, 0, 0);
     border-radius: 20px;
-    border: 3px solid #5bd1d7;
-    background-color: rgb(118, 118, 118);
-    display: block;
-    width: 200px;
-    height:150px;
+    width: 270px;
+    height:220px;
 }
-.caixa:hover{
-    opacity: 1.0;
+.projeto img{
+    width: 270px;
+    height:220px;
+    border-radius: 20px;
+    border: 5px solid #5bd1d7;
+    opacity: 0.3;
+    transition: 0.3s;
+}
+
+.projeto-ativo img{
+    opacity: 0.8;
+}
+.projeto img:hover{
+    opacity: 1;
     animation: shadow-pop-br 0.1s cubic-bezier(0.785, 0.135, 0.150, 0.860) both;
 }
 
-.caixa p{
-    
-}
-.one{
-    background-image: url(../imagens-videos/projetos-fakes/1.png);
-}
-.two{
-    background-image: url(../imagens-videos/projetos-fakes/2.png);
-}
-.three{
-    background-image: url(../imagens-videos/projetos-fakes/3.png);
-}
-.four{
-    background-image: url(../imagens-videos/projetos-fakes/4.png);
-}
-.five{
-    background-image: url(../imagens-videos/projetos-fakes/5.png);
-}
-.six{
-    background-image: url(../imagens-videos/projetos-fakes/6.png);
-}
-.one,
-.two,
-.three,
-.four,
-.five,
-.six{
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+
+
 
 /*Habilidades*******/
 #habilidades {
