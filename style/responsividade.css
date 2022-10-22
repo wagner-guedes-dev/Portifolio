@@ -28,17 +28,14 @@
     .cartoon{
         padding-right: 20px;
     }
+    main .info #button{
+        justify-content: center;
+    }
 }
 
 
 @media (max-width : 840px){
-    main .info #button{
-        height: 110px;
-    }
-    main .info #button button {
-        width: 80px;
-        height: 80px;
-    }
+ 
     p{
         padding: 0 3%;
     }

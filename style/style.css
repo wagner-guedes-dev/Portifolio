@@ -128,7 +128,7 @@ h2{
 
 main .info #button{
     display: flex;
-    justify-content: center;
+    justify-content: start;
     margin-top: 20px;
 }
 main .info #button button {
