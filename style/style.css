@@ -264,6 +264,8 @@ main .text {
 }
 #descricao-hab{
     text-align: center;
+    margin-top: 20px;
+    max-width: 400px;
 }
 #text-hab{
     padding-top: 90px;
@@ -299,7 +301,7 @@ footer{
 #mobiletext{
     display: none;
 }
-#desktotext {
+#desktoptext {
     display: block;
 }
 
