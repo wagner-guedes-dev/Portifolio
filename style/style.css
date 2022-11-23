@@ -90,7 +90,8 @@ main {
     display: flex;
     padding-top: 30vh;
     justify-content:space-evenly;
-    height: 100vh;
+    height: auto;
+    padding-bottom: 200px;
 }
 h1{
     font-size: 60px;
@@ -180,39 +181,43 @@ main .text {
     width: 295px;
     margin: 0 auto;
 }
-#repositoriotxt{
-    text-align: right;
-    margin-bottom: 20px;
-}
-#todos-os-projetos{
+#todos-projetos{
+    margin-top: 50px;
     display: flex;
-    justify-content:center;
+    justify-content: space-evenly;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 15px;
+    margin-bottom: 50px;
 }
-.projeto{
-    background-color: rgba(0, 0, 0, 0);
-    border-radius: 20px;
-    width: 270px;
-    height:220px;
-}
-.projeto img{
-    width: 270px;
-    height:220px;
-    border-radius: 20px;
+#todos-projetos section{
     border: 5px solid #5bd1d7;
-    opacity: 0.3;
-    transition: 0.3s;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(85, 83, 83);
+    cursor: pointer;
 }
-
-.projeto-ativo img{
-    opacity: 0.8;
+#descricao-projetos{
+    display: flex;
+    flex-direction: column;
 }
-.projeto img:hover{
-    opacity: 1;
-    animation: shadow-pop-br 0.1s cubic-bezier(0.785, 0.135, 0.150, 0.860) both;
+#todos-projetos section img{
+    width: 150px;
+    height: 150px;
 }
-
+.img-pizzaria{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    overflow-y: hidden;
+    cursor: grab;
+}
+#pizzaria img{
+    width: 400px;
+    height: 270px;
+    outline: 5px solid #5bd1d7;
+    outline-offset: -5px;
+    border-radius: 10px;
+}
 
 
 
@@ -273,7 +278,6 @@ main .text {
 }
 .none{
     display: none;
-    opacity: 0;
 }
 
 .animation {
