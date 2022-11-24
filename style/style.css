@@ -176,47 +176,79 @@ main .text {
 #projetos{
     display: block;
     padding-top: 13vh !important;
+    padding-bottom: 100px !important;
 }
 #titulo-projetos{
     width: 295px;
     margin: 0 auto;
 }
 #todos-projetos{
-    margin-top: 50px;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 50px;
+    gap: 12px;
+    margin: 50px 15px;
 }
 #todos-projetos section{
     border: 5px solid #5bd1d7;
-    padding: 10px;
     border-radius: 10px;
     background-color: rgb(85, 83, 83);
     cursor: pointer;
+    width: 20%;
 }
 #descricao-projetos{
     display: flex;
     flex-direction: column;
 }
+
 #todos-projetos section img{
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
 }
-.img-pizzaria{
+#descricao-projetos h2{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.imagens-projetos{
     display: flex;
     align-items: center;
-    gap: 12px;
-    overflow-y: hidden;
+    gap: 15px;
+    overflow: hidden;
     cursor: grab;
+    border-radius: 10px;
+    margin: 0 15px;
 }
-#pizzaria img{
+#pizzaria img,
+#flixwag img,
+#quiz img,
+#financeiro img,
+#minhastarefas img{
     width: 400px;
     height: 270px;
     outline: 5px solid #5bd1d7;
     outline-offset: -5px;
     border-radius: 10px;
+}
+
+.text-projetos{
+    margin: 40px auto;
+    max-width: 650px;
+}
+.text-projetos h4{
+    color: #5bd1d7;
+    font-size: 20px;
+}
+.text-projetos p{
+    margin: 10px 0;
+    font-size: 15px;
+    font-weight: 600;
+}
+.text-projetos a{
+    text-decoration: none;
+    color: #fff;
 }
 
 

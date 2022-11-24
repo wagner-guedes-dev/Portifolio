@@ -81,33 +81,136 @@
                 </div>
 
                 <div id="todos-projetos">
-                    <section>
-                        <img src="Imagens-videos/Projetos/pizza-logo.png" alt="Gestor administrativo pizzaria" title="Pizzaria">
+                    <section data-anime="left" id="pizzaria-button" onclick="funcpizza()" >
+                        <img src="Imagens-videos/Projetos/gestor-pizzaria-img.png" alt="Gestor administrativo pizzaria" title="Pizzaria">
                     </section>
-                    <section>
-                        <img src="Imagens-videos/Projetos/icon-filme.png" alt="WagFlix" title="Filmes recém lançados">
+                    <section data-anime="left" id="flixwag-button" onclick="funcflixwag()">
+                        <img src="Imagens-videos/Projetos/flixwag-img.png" alt="WagFlix" title="Filmes recém lançados">
                     </section>
-                    <section>
-                        <img src="Imagens-videos/Projetos/minhas-tarefas-logo.png" alt="Minhas Tarefas" title="Minhas tarefas">
+                    <section data-anime="down" id="minhastarefas-button" onclick="funcminhastarefas()">
+                        <img src="Imagens-videos/Projetos/minhas-tarefas-img.png" alt="Minhas Tarefas" title="Minhas tarefas">
                     </section>
-                    <section>
-                        <img src="Imagens-videos/Projetos/quiz-icon.png" alt="Quiz Front-End" title="Quiz Front-End">
+                    <section data-anime="right" id="quiz-button" onclick="funcquiz()">
+                        <img src="Imagens-videos/Projetos/quiz-front-end.png" alt="Quiz Front-End" title="Quiz Front-End">
                     </section>
-                    <section>
-                        <img src="Imagens-videos/Projetos/controle-financeiro-icon.png" alt="">
+                    <section data-anime="right" id="financeiro-button" onclick="funcfinanceiro()" >
+                        <img src="Imagens-videos/Projetos/controle-financeiro.png" alt="">
                     </section>
                 </div>
 
-                <div id="descricao-projetos" style="display: none;">
-                    <section id="pizzaria">
+                <div id="descricao-projetos" >
+                    <section id="pizzaria" >
                         <h2>Sistema administrativo de uma pizzaria</h2>
-                        <div class="img-pizzaria">
+                        <div class="imagens-projetos drag-pizzaria">
                             <img src="Imagens-videos/Projetos/pizzaria-imagens/1.png" alt="">
                             <img src="Imagens-videos/Projetos/pizzaria-imagens/2.png" alt="">
                             <img src="Imagens-videos/Projetos/pizzaria-imagens/3.png" alt="">
                             <img src="Imagens-videos/Projetos/pizzaria-imagens/4.png" alt="">
                             <img src="Imagens-videos/Projetos/pizzaria-imagens/5.png" alt="">
                             <img src="Imagens-videos/Projetos/pizzaria-imagens/6.png" alt="">
+                        </div>
+                        <div class="text-projetos">
+                            <h4>
+                                Projeto pessoal feito utilizando HTML, CSS e JavaScript com o intuito de administrar o caixa e as mesas do restaurante.
+                            </h4>
+                            <p>
+                                <strong>GitHub:</strong><a href="https://github.com/wagnerwg0202/gestor-pizzaria"> github.com/wagnerwg0202/gestor-pizzaria</a>
+                            </p>
+                            <p>
+                                <strong>Live:</strong><a href="https://gestaopizzaria.netlify.app/"> gestaopizzaria.netlify.app/</a>
+                            </p>
+                        </div>
+                    </section>
+                    <section id="flixwag" >
+                        <h2>FlixWag</h2>
+                        <div class="imagens-projetos drag-flixwag">
+                            <img src="Imagens-videos/Projetos/pizzaria-imagens/1.png" alt="">
+                            <img src="Imagens-videos/Projetos/pizzaria-imagens/2.png" alt="">
+                            <img src="Imagens-videos/Projetos/pizzaria-imagens/3.png" alt="">
+                            <img src="Imagens-videos/Projetos/pizzaria-imagens/4.png" alt="">
+                            <img src="Imagens-videos/Projetos/pizzaria-imagens/5.png" alt="">
+                            <img src="Imagens-videos/Projetos/pizzaria-imagens/6.png" alt="">
+                        </div>
+                        <div class="text-projetos">
+                            <h4>
+                                Projeto pessoal feito com ReactJS, consumindo API de filmes e sendo possível salvar favoritos no LocalStore.
+                            </h4>
+                            <p>
+                                <strong>GitHub:</strong><a href="https://github.com/wagnerwg0202/flixwag-filmes">github.com/wagnerwg0202/flixwag-filmes</a>
+                            </p>
+                            <p>
+                                <strong>Live:</strong><a href="https://flixwag-lancamentos.netlify.app/">flixwag-lancamentos.netlify.app/</a>
+                            </p>
+                            <p>
+                                <strong>API:</strong><a href="https://www.themoviedb.org/">www.themoviedb.org/</a>
+                            </p>
+                        </div>
+                    </section>
+                    <section id="minhastarefas" >
+                        <h2>Lista de Tarefas</h2>
+                        <div class="imagens-projetos drag-minhas-tarefas">
+                            <img src="Imagens-videos/Projetos/pizzaria-imagens/1.png" alt="">
+                            <img src="Imagens-videos/Projetos/pizzaria-imagens/2.png" alt="">
+                            <img src="Imagens-videos/Projetos/pizzaria-imagens/3.png" alt="">
+                            <img src="Imagens-videos/Projetos/pizzaria-imagens/4.png" alt="">
+                            <img src="Imagens-videos/Projetos/pizzaria-imagens/5.png" alt="">
+                            <img src="Imagens-videos/Projetos/pizzaria-imagens/6.png" alt="">
+                        </div>
+                        <div class="text-projetos">
+                            <h4>
+                                Projeto pessoal feito com ReactJS e utilizando FireBase como banco de dados.
+                            </h4>
+                            <p>
+                                <strong>GitHub:</strong><a href="https://github.com/wagnerwg0202/minhas-tarefas">github.com/wagnerwg0202/minhas-tarefas</a>
+                            </p>
+                            <p>
+                                <strong>Live:</strong><a href="https://minhas-tarefas-wg.netlify.app/ ">minhas-tarefas-wg.netlify.app/</a>
+                            </p>
+                        </div>
+                    </section>
+                    <section id="quiz" >
+                        <h2>Quiz Front-End</h2>
+                        <div class="imagens-projetos drag-quiz">
+                            <img src="Imagens-videos/Projetos/pizzaria-imagens/1.png" alt="">
+                            <img src="Imagens-videos/Projetos/pizzaria-imagens/2.png" alt="">
+                            <img src="Imagens-videos/Projetos/pizzaria-imagens/3.png" alt="">
+                            <img src="Imagens-videos/Projetos/pizzaria-imagens/4.png" alt="">
+                            <img src="Imagens-videos/Projetos/pizzaria-imagens/5.png" alt="">
+                            <img src="Imagens-videos/Projetos/pizzaria-imagens/6.png" alt="">
+                        </div>
+                        <div class="text-projetos">
+                            <h4>
+                                Projeto pessoal feito com ReactJS no intuito de testar conhecimentos front-end com 15 perguntas envolvendo HTML, CSS e JavaScript.
+                            </h4>
+                            <p>
+                                <strong>GitHub:</strong><a href="https://github.com/wagnerwg0202/quiz-front-end-react">github.com/wagnerwg0202/quiz-front-end-react</a>
+                            </p>
+                            <p>
+                                <strong>Live:</strong><a href="https://quiz-front-end.netlify.app/">quiz-front-end.netlify.app/</a>
+                            </p>
+                        </div>
+                    </section>
+                    <section id="financeiro" >
+                        <h2>Controle Financeiro</h2>
+                        <div class="imagens-projetos drag-financeiro">
+                            <img src="Imagens-videos/Projetos/pizzaria-imagens/1.png" alt="">
+                            <img src="Imagens-videos/Projetos/pizzaria-imagens/2.png" alt="">
+                            <img src="Imagens-videos/Projetos/pizzaria-imagens/3.png" alt="">
+                            <img src="Imagens-videos/Projetos/pizzaria-imagens/4.png" alt="">
+                            <img src="Imagens-videos/Projetos/pizzaria-imagens/5.png" alt="">
+                            <img src="Imagens-videos/Projetos/pizzaria-imagens/6.png" alt="">
+                        </div>
+                        <div class="text-projetos">
+                            <h4>
+                                Projeto pessoal criado com ReactJS, neste projeto é possível exibir aentrada, saída e valor total de seu montante e sendo salvos no LocalStore.
+                                Também temos uma tabela com os detalhes de seu montante sendo possibilitado exclusão do mesmo.
+                            </h4>
+                            <p>
+                                <strong>GitHub:</strong><a href="https://github.com/wagnerwg0202/controle-financeiro-react">github.com/wagnerwg0202/controle-financeiro-react</a>
+                            </p>
+                            <p>
+                                <strong>Live:</strong><a href="https://minhas-tarefas-wg.netlify.app/">minhas-tarefas-wg.netlify.app/</a>
+                            </p>
                         </div>
                     </section>
                 </div>
@@ -213,5 +316,6 @@
     <script src="javascript/javascript.js"></script>
     <script src="javascript/scroll.js"></script>
     <script src="javascript/menu.js"></script>
+    <script src="javascript/exibirprojetos.js"></script>
 </body>
 </html>
