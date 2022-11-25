@@ -247,8 +247,16 @@ main .text {
     font-weight: 600;
 }
 .text-projetos a{
+    font-family: 'Times New Roman', Times, serif;
     text-decoration: none;
+    color: #5bd1d7;
+    transition: 0.2;
+    font-size: 16px;
+}
+.text-projetos a:hover{
     color: #fff;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 
